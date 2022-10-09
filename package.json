@@ -1,6 +1,6 @@
 {
   "name": "gramjs-sqlitesession",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "GramJS extension for supporting .session file",
   "main": "lib/index.js",
   "scripts": {
@@ -26,9 +26,5 @@
   "dependencies": {
     "sqlite3": "^5.1.2",
     "telegram": "^2.12.8"
-  },
-  "devDependencies": {
-    "@types/node": "^18.8.3",
-    "typescript": "^4.8.4"
   }
 }

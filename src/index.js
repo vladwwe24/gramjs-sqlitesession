@@ -5,7 +5,7 @@ const {MemorySession} = require('telegram/sessions');
 const EXTENSION = '.session'
 
 class SQLiteSession extends MemorySession {
-    constructor(sessionPath: string, extension: string = EXTENSION) {
+    constructor(sessionPath, extension = EXTENSION) {
         super();
         this.fileName = ':memory:';
 
@@ -15,7 +15,7 @@ class SQLiteSession extends MemorySession {
     }
 
     async load(){
-        new sqlite3.Database(this.fileName, sqlite3.OPEN_READONLY, (err: Error | null) => {
+        new sqlite3.Database(this.fileName, sqlite3.OPEN_READONLY, (err) => {
             if(err){
                 console.error(err);
             }
