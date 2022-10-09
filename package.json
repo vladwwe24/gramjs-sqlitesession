@@ -1,8 +1,8 @@
 {
   "name": "gramjs-sqlitesession",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "GramJS extension for supporting .session file",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
     "test": "jest"

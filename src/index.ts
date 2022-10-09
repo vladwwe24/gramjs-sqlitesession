@@ -4,7 +4,7 @@ const {MemorySession} = require('telegram/sessions');
 
 const EXTENSION = '.session'
 
-export class SQLiteSession extends MemorySession {
+class SQLiteSession extends MemorySession {
     constructor(sessionPath: string, extension: string = EXTENSION) {
         super();
         this.fileName = ':memory:';
