@@ -1,13 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const {path} = require("path");
 const sqlite3 = require('sqlite3').verbose();
 const {MemorySession} = require('telegram/sessions');
 
 const EXTENSION = '.session'
 
-class SQLiteSession extends MemorySession {
-    constructor(sessionPath, extension = EXTENSION) {
+export class SQLiteSession extends MemorySession {
+    constructor(sessionPath: string, extension: string = EXTENSION) {
         super();
         this.fileName = ':memory:';
 
@@ -17,7 +15,7 @@ class SQLiteSession extends MemorySession {
     }
 
     async load(){
-        new sqlite3.Database(this.fileName, sqlite3.OPEN_READONLY, (err) => {
+        new sqlite3.Database(this.fileName, sqlite3.OPEN_READONLY, (err: Error | null) => {
             if(err){
                 console.error(err);
             }
@@ -26,4 +24,4 @@ class SQLiteSession extends MemorySession {
     }
 }
 
-exports.SQLiteSession = SQLiteSession;
+module.exports = SQLiteSession;
