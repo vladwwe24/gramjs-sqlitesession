@@ -1,0 +1,34 @@
+{
+  "name": "gramjs-sqlitesession",
+  "version": "1.0.4",
+  "description": "GramJS extension for supporting .session file",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladwwe24/gramjs-sqlitesession.git"
+  },
+  "keywords": [
+    "telegram",
+    ".session",
+    "gramjs",
+    "api",
+    "js"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vladwwe24/gramjs-sqlitesession/issues"
+  },
+  "homepage": "https://github.com/vladwwe24/gramjs-sqlitesession#readme",
+  "dependencies": {
+    "sqlite3": "^5.1.2",
+    "telegram": "^2.12.8"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.3",
+    "typescript": "^4.8.4"
+  }
+}
