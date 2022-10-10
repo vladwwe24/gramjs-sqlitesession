@@ -1,12 +1,9 @@
 # gramjs-sqlitesession
-***
 
 GramJS SqliteSession for working with **.session** files.
 >Note: SqliteSession does not support using inside the browser. (Node.js ONLY)
-***
 
 ## How to get started
-***
 
 Install **gramjs-sqlitesession**:
 
